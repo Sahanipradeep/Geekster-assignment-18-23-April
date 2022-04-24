@@ -1,0 +1,48 @@
+ 
+class Node:  
+    def __init__(self,data):  
+        self.data = data;  
+        self.next = None;  
+          
+class SinglyLinkedList:  
+    #Represent the head and tail of the singly linked list  
+    def __init__(self):  
+        self.head = None;  
+        self.tail = None;  
+          
+   
+        #Checks if the list is empty  
+        if(self.head == None):  
+            
+            self.head = newNode;  
+            self.tail = newNode;  
+        else:  
+            
+            self.tail.next = newNode;  
+           
+            self.tail = newNode;  
+              
+    #display() will display all the nodes present in the list  
+    def display(self):  
+       
+        current = self.head;  
+          
+        if(self.head == None):  
+            print("List is empty");  
+            return;  
+        print("Nodes of singly linked list: ");  
+        while(current != None):  
+            #Prints each node by incrementing pointer  
+            print(current.data),  
+            current = current.next;  
+   
+sList = SinglyLinkedList();  
+          
+#Add nodes to the list  
+sList.addNode(1);  
+sList.addNode(2);  
+sList.addNode(3);  
+sList.addNode(4);  
+   
+#Displays the nodes present in the list  
+sList.display();  
